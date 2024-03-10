@@ -14,7 +14,7 @@
   max-width: 650px;
   margin: auto; }
 
-.boton, button {
+.boton {
   background-color: #011627;
   color: #fdfffc;
   width: 50%;
@@ -22,15 +22,18 @@
   margin: 5%; }
 
 .header {
-  background-image: linear-gradient(to bottom, #233f54, #418aaeaa); }
+  background-image: linear-gradient(to top, #233f54, #418aaeaa); }
 
 .main {
-  background-image: linear-gradient(to bottom, #ffbf3f, #ffbf3faa);
+  background-image: linear-gradient(to top, #233f54, #418aaeaa);
   min-height: 80vh; }
   .main h1 {
     text-align: center;
     font-family: "Anta", sans-serif;
     padding: 10px; }
+  .main .ancho-650 {
+    max-width: 650px;
+    margin: auto; }
   .main .articulos {
     display: flex;
     flex-wrap: wrap;
@@ -79,5 +82,10 @@
           .main .articulos .seccion-tres form input:focus {
             transform: scale(1.05); }
 
+/*
+button{
+    @extend .boton;
+}
+*/
 footer {
   background-color: #C01A7D; }

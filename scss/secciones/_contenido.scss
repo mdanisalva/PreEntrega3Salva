@@ -1,5 +1,6 @@
 .main{
-    background-image: linear-gradient(to bottom, #ffbf3f,  #ffbf3faa);
+    //background-image: linear-gradient(to bottom, #ffbf3f,  #ffbf3faa);
+    background-image: linear-gradient(to top, #233f54,  #418aaeaa);
     // % del alto del navegador
     min-height: 80vh;
     h1{
@@ -7,6 +8,11 @@
         font-family: $fuente-titulo;
         padding: 10px;
     }
+    .ancho-650{
+        max-width: 650px;
+        margin: auto;
+    }
+    
     .articulos{
         display: flex;
         flex-wrap: wrap;
@@ -52,7 +58,8 @@
 }
 
 
-
+/*
 button{
     @extend .boton;
 }
+*/
