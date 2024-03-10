@@ -21,6 +21,9 @@
   padding: 10px;
   margin: 5%; }
 
+.header {
+  background-image: linear-gradient(to bottom, #233f54, #418aaeaa); }
+
 .main {
   background-image: linear-gradient(to bottom, #ffbf3f, #ffbf3faa);
   min-height: 80vh; }
