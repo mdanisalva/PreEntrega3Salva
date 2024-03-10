@@ -1,0 +1,58 @@
+.main{
+    background-image: linear-gradient(to bottom, #ffbf3f,  #ffbf3faa);
+    // % del alto del navegador
+    min-height: 80vh;
+    h1{
+        text-align: center;
+        font-family: $fuente-titulo;
+        padding: 10px;
+    }
+    .articulos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .seccion-uno{
+            // Mixin
+            @include fondo-destacado(pink);
+            button{
+                transition: .5s ease-in-out;
+                &:hover{
+                    transform: translate(0, 30px) rotateZ(10deg);
+                }
+            }
+        }
+        .seccion-dos{
+            @include fondo-destacado (#5c5cfb);
+            h3{
+                animation-name: latido;
+                animation-duration: 3s;
+                // Cuantas veces quiero que se repita
+                animation-iteration-count: infinite;
+            }
+        }
+        .seccion-tres{
+            @include fondo-destacado(#fab128);
+            form{
+                display: flex;
+                flex-direction: column;
+                input{
+                    border-radius: 5px;
+                    padding: 10px;
+                    margin: 10px;
+                    text-align: center;
+                    transition: scale .3s ease-in-out;
+                    &:focus{
+                        // background-color: #ffbf3fb6;
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+button{
+    @extend .boton;
+}

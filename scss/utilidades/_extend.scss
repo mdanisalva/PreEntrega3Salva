@@ -1,0 +1,23 @@
+.ancho-650{
+    max-width: 650px;
+    margin: auto;
+}
+.boton{
+    background-color: $azul;
+    color: $blanco;
+    width: 50%;
+    padding: 10px;
+    margin: 5%;
+}
+
+// MIXIN
+
+@mixin fondo-destacado ($color-fondo) {
+    background-color: $color-fondo;
+    color: $azul;
+    text-align: center;
+    padding: 20px;
+    border: solid $azul 3px;
+    width: 300px;
+    margin: 10px;
+}

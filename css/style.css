@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+.fa-bell {
+  color: #29a5c7;
+  font-size: 20;
+  padding: 0 5px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+.ancho-650 {
+  max-width: 650px;
+  margin: auto; }
+
+.boton, button {
+  background-color: #011627;
+  color: #fdfffc;
+  width: 50%;
+  padding: 10px;
+  margin: 5%; }
+
+.main {
+  background-image: linear-gradient(to bottom, #ffbf3f, #ffbf3faa);
+  min-height: 80vh; }
+  .main h1 {
+    text-align: center;
+    font-family: "Anta", sans-serif;
+    padding: 10px; }
+  .main .articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .main .articulos .seccion-uno {
+      background-color: pink;
+      color: #011627;
+      text-align: center;
+      padding: 20px;
+      border: solid #011627 3px;
+      width: 300px;
+      margin: 10px; }
+      .main .articulos .seccion-uno button {
+        transition: .5s ease-in-out; }
+        .main .articulos .seccion-uno button:hover {
+          transform: translate(0, 30px) rotateZ(10deg); }
+    .main .articulos .seccion-dos {
+      background-color: #5c5cfb;
+      color: #011627;
+      text-align: center;
+      padding: 20px;
+      border: solid #011627 3px;
+      width: 300px;
+      margin: 10px; }
+      .main .articulos .seccion-dos h3 {
+        animation-name: latido;
+        animation-duration: 3s;
+        animation-iteration-count: infinite; }
+    .main .articulos .seccion-tres {
+      background-color: #fab128;
+      color: #011627;
+      text-align: center;
+      padding: 20px;
+      border: solid #011627 3px;
+      width: 300px;
+      margin: 10px; }
+      .main .articulos .seccion-tres form {
+        display: flex;
+        flex-direction: column; }
+        .main .articulos .seccion-tres form input {
+          border-radius: 5px;
+          padding: 10px;
+          margin: 10px;
+          text-align: center;
+          transition: scale .3s ease-in-out; }
+          .main .articulos .seccion-tres form input:focus {
+            transform: scale(1.05); }
+
+footer {
+  background-color: #C01A7D; }
