@@ -21,6 +21,32 @@
   padding: 10px;
   margin: 5%; }
 
+@keyframes latido {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.4); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes arcoiris {
+  0% {
+    background-color: #f93131;
+    color: white;
+    text-decoration: underline; }
+  20% {
+    background-color: #f99531; }
+  40% {
+    background-color: #3ef931;
+    color: black; }
+  60% {
+    background-color: #3163f9;
+    color: white; }
+  80% {
+    background-color: #ba31f9; }
+  100% {
+    background-color: #f93131; } }
+
 .header {
   background-image: linear-gradient(to top, #233f54, #418aaeaa); }
 
