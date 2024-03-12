@@ -59,6 +59,53 @@
   .main .ancho-650 {
     max-width: 650px;
     margin: auto; }
+  .main .seccion-contacto {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffef;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .main .seccion1-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 400px);
+    grid-template-areas: "imagen-grande" "img-1" "img-2" "img-3" "img-4";
+    max-width: 760px;
+    margin: auto; }
+    .main .seccion1-index .imagen-grande {
+      grid-area: imagen-grande;
+      background-image: url("../resources/fotos/grupal.jpg");
+      background-size: cover;
+      color: white; }
+    .main .seccion1-index .img-1 {
+      grid-area: img-1;
+      background-image: url("../resources/fotos/pan.jpg");
+      background-size: cover;
+      color: white; }
+    .main .seccion1-index .img-2 {
+      grid-area: img-2;
+      background-image: url("../resources/fotos/reposteria.jpg");
+      background-size: cover;
+      color: white; }
+    .main .seccion1-index .img-3 {
+      grid-area: img-3;
+      background-image: url("../resources/fotos/desfile.jpg");
+      background-size: cover;
+      color: white; }
+    .main .seccion1-index .img-4 {
+      grid-area: img-4;
+      background-image: url("../resources/fotos/tortas.jpg");
+      background-size: cover;
+      color: white; }
+  .main .seccion1-index .imagen-grande img {
+    width: 300px; }
+  .main .seccion1-index h2 {
+    font-family: Arial, Helvetica, sans-serif; }
+  .main .seccion1-index img {
+    height: 175px; }
   .main .articulos {
     display: flex;
     flex-wrap: wrap;
@@ -106,6 +153,11 @@
           transition: scale .3s ease-in-out; }
           .main .articulos .seccion-tres form input:focus {
             transform: scale(1.05); }
+  @media (min-width: 700px) {
+    .main .seccion1-index {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 200px);
+      grid-template-areas: "imagen-grande imagen-grande img-1 img-2" "imagen-grande imagen-grande img-3 img-4"; } }
 
 /*
 button{
@@ -113,4 +165,4 @@ button{
 }
 */
 footer {
-  background-color: #C01A7D; }
+  background-color: #db4992; }
