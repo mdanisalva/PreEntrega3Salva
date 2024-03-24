@@ -56,6 +56,10 @@
     text-align: center;
     font-family: "Anta", sans-serif;
     padding: 10px; }
+  .main .texto {
+    max-width: 80vw;
+    margin: auto;
+    text-align: justify; }
   .main .ancho-650 {
     max-width: 650px;
     margin: auto; }
