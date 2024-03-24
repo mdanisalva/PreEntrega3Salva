@@ -63,11 +63,11 @@
   .main .ancho-650 {
     max-width: 650px;
     margin: auto; }
-  .main .seccion-contacto {
+  .main .form-contacto {
     border: 1px solid black;
     margin: 20px;
-    padding: 10px;
-    background-color: #ffffef;
+    padding: 20px;
+    background-color: #effbff;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -162,6 +162,12 @@
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 200px);
       grid-template-areas: "imagen-grande imagen-grande img-1 img-2" "imagen-grande imagen-grande img-3 img-4"; } }
+  @media (min-width: 1200px) {
+    .main .container {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center; } }
 
 /*
 button{

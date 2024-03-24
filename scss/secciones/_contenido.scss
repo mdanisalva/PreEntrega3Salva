@@ -21,15 +21,21 @@
         margin: auto;
     }
 
-    .seccion-contacto {
+    // .container {
+    //     display: flex;
+    //     justify-content: space-evenly;
+    //     flex-direction: row;
+    // }
+
+    .form-contacto {
         border: 1px solid black;
         margin: 20px;
-        padding: 10px;
-        background-color: #ffffef;
-        margin: auto;
+        padding: 20px;
+        background-color: #effbff;        
+        margin: auto;        
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;        
     }
 
     .seccion1-index {
@@ -154,6 +160,14 @@
             grid-template-areas:
                 "imagen-grande imagen-grande img-1 img-2"
                 "imagen-grande imagen-grande img-3 img-4";
+        }
+    }
+    @media (min-width: 1200px) {
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            align-items: center;
         }
     }
 }
